@@ -231,7 +231,7 @@ Topic: "Pacing Issues"
 
 ```bash
 # Clone and install
-git clone https://github.com/your-org/llm-agent-demo.git
+git clone https://github.com/leon5354/llm-agent-demo.git
 cd llm-agent-demo
 pip install -r requirements.txt
 
@@ -453,6 +453,6 @@ MIT License — Free for academic and commercial use.
   title = {LLM-Agent Classification with Dynamic Topic Discovery},
   author = {Research Team},
   year = {2026},
-  url = {https://github.com/your-org/llm-agent-demo}
+  url = {https://github.com/leon5354/llm-agent-demo}
 }
 ```
