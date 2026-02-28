@@ -1,6 +1,6 @@
-# LLM-Agent Demo
+# Agent Skills Library
 
-A demonstration of LLM-based agents for text classification with dynamic topic discovery.
+A collection of reusable LLM agent skills for text classification, topic discovery, and multi-provider LLM access.
 
 > 📖 This GUIDE.md explains the concepts, architecture, and how to use this library.
 > Each skill has its own README.md in its folder.
@@ -231,7 +231,7 @@ Topic: "Pacing Issues"
 
 ```bash
 # Clone and install
-git clone https://github.com/leon5354/llm-agent-demo.git
+git clone https://github.com/leon5354/agent_skills.git
 cd llm-agent-demo
 pip install -r requirements.txt
 
@@ -449,10 +449,10 @@ MIT License — Free for academic and commercial use.
 ## Citation
 
 ```bibtex
-@software{llm_agent_demo,
-  title = {LLM-Agent Classification with Dynamic Topic Discovery},
+@software{agent_skills,
+  title = {Agent Skills Library},
   author = {Research Team},
   year = {2026},
-  url = {https://github.com/leon5354/llm-agent-demo}
+  url = {https://github.com/leon5354/agent_skills}
 }
 ```
