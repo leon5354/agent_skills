@@ -1,0 +1,11 @@
+# LLM-Agent Demo Requirements
+
+# Core
+pydantic>=2.0.0
+
+# LLM providers (optional - install what you need)
+litellm>=1.0.0      # Multi-provider support
+requests>=2.28.0    # For direct Ollama calls
+
+# Data processing
+pandas>=2.0.0       # Optional, for data analysis
