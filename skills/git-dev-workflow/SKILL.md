@@ -13,10 +13,11 @@ Strict GitHub development workflow. Every code change follows the full pipeline:
 2. **All documentation stays synced.** Every PR must update relevant docs.
 3. **English only** for code, comments, commit messages, PR descriptions, and documentation.
 4. **One PR = one logical change.** Don't mix unrelated features.
-5. **Squash and merge.** Clean commit history on `main`.
+5. **Squash and merge.** Clean commit history on `main`. Only after user confirms.
 6. **Every commit has a clear message.** What was done + why. No vague messages.
 7. **Every commit has inline comments** for non-obvious logic.
 8. **Tests run before every commit.** No committing broken code.
+9. **User confirms before PR merge.** Never auto-merge. User may want additional commits first.
 
 ## Prerequisites
 
@@ -147,9 +148,16 @@ EOF
 
 PR title format: `<type>: <description>` (e.g., `feat: add Demucs separator module`)
 
-### Step 7: Review and Squash Merge
+### Step 7: Review
 
-After approval:
+Before merging, confirm with the user:
+- PR description is accurate
+- All changes are intentional
+- User may request additional commits or changes
+
+**Do NOT merge without explicit user confirmation.**
+
+### Step 8: Squash Merge (after user confirms)
 
 ```bash
 # Squash and merge via CLI
@@ -168,7 +176,7 @@ feat: <description>
 - <key change 3>
 ```
 
-### Step 8: Cleanup
+### Step 9: Cleanup
 
 ```bash
 git checkout main
@@ -229,7 +237,7 @@ Still needs a clear message. `WIP` alone is not acceptable. These get squashed a
 ## Quick Reference
 
 ```
-main → pull → branch → develop → docs → test → push → PR → squash merge → cleanup
+main → pull → branch → develop → docs → test → push → PR → user confirms → squash merge → cleanup
 ```
 
 Every step. Every time. No skipping.
